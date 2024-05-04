@@ -18,7 +18,7 @@ from highrise.__main__ import *
 import asyncio, random
 from emotes import Emotes
 from emotes import Dance_Floor
-owners = ['_cap0_','alionardo_']
+owners = ['_kilito','i1i1i']
 
 class BotDefinition:
     
@@ -32,7 +32,7 @@ class BotDefinition:
 class Counter:
     bot_id = ""
     static_ctr = 0
-    usernames = ['Alionardo_']
+    usernames = ['_kilito']
 
 class Bot(BaseBot):
     continuous_emote_tasks: Dict[int, asyncio.Task[Any]] = {}  
@@ -187,7 +187,7 @@ class Bot(BaseBot):
 
      try:
 
-         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n  Welcome to The Club \n ____________________________\n•!buy or -buy \nFor vip \n•!list or -list\nTo discover our room.\n ____________________________\n")
+         await self.highrise.send_whisper(user.id,f"\n ____________________________\nHello {user.username}\n   \n ____________________________\n•!buy or -buy \nFor vip \n•!list or -list\nTo discover our room.\n ____________________________\n")
        
          await self.highrise.send_emote('emote-salute')
      
